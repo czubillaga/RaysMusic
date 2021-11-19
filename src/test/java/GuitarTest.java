@@ -23,4 +23,9 @@ public class GuitarTest {
     public void hasType() {
         assertEquals(Type.STRING, guitar.getType());
     }
+
+    @Test
+    public void hasStringCount() {
+        assertEquals(6, guitar.getStringCount());
+    }
 }

@@ -23,4 +23,9 @@ public class PianoTest {
     public void hasType() {
         assertEquals(Type.KEYBOARD, piano.getType());
     }
+
+    @Test
+    public void hasKeyCount() {
+        assertEquals(88, piano.getKeyCount());
+    }
 }

@@ -23,4 +23,9 @@ public class SaxophoneTest {
     public void hasType() {
         assertEquals(Type.WOODWIND, saxophone.getType());
     }
+
+    @Test
+    public void hasKeyCount() {
+        assertEquals(22, saxophone.getKeyCount());
+    }
 }

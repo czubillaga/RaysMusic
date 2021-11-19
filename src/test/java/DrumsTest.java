@@ -23,4 +23,9 @@ public class DrumsTest {
     public void hasType() {
         assertEquals(Type.PERCUSSION, drum.getType());
     }
+
+    @Test
+    public void hasPieceCount() {
+        assertEquals(4, drum.getPieceCount());
+    }
 }

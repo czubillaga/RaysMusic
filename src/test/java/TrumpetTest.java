@@ -24,4 +24,9 @@ public class TrumpetTest {
     public void hasType() {
         assertEquals(Type.BRASS, trumpet.getType());
     }
+
+    @Test
+    public void hasValveCount() {
+        assertEquals(3, trumpet.getValveCount());
+    }
 }
