@@ -1,3 +1,5 @@
+package item_tests;
+
 import items.GuitarStrings;
 import items.SongBook;
 import org.junit.Before;
@@ -35,4 +37,5 @@ public class SongBookTest {
     public void canCalculateMarkup() {
         assertEquals(new BigDecimal("4.13"), songBook.calculateMarkup());
     }
+
 }

@@ -1,3 +1,5 @@
+package item_tests;
+
 import items.Reed;
 import org.junit.Before;
 import org.junit.Test;

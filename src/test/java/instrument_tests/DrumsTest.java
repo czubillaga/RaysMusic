@@ -1,7 +1,11 @@
+package instrument_tests;
+
 import instruments.Drum;
 import org.junit.Before;
 import org.junit.Test;
 import types.Type;
+
+import java.math.BigDecimal;
 
 import static org.junit.Assert.assertEquals;
 
@@ -27,5 +31,10 @@ public class DrumsTest {
     @Test
     public void hasPieceCount() {
         assertEquals(4, drum.getPieceCount());
+    }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(new BigDecimal("75.09"), drum.calculateMarkup());
     }
 }

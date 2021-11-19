@@ -1,7 +1,11 @@
+package instrument_tests;
+
 import instruments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
 import types.Type;
+
+import java.math.BigDecimal;
 
 import static org.junit.Assert.assertEquals;
 
@@ -27,5 +31,10 @@ public class GuitarTest {
     @Test
     public void hasStringCount() {
         assertEquals(6, guitar.getStringCount());
+    }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(new BigDecimal("132.26"), guitar.calculateMarkup());
     }
 }

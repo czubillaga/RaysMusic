@@ -1,3 +1,5 @@
+package item_tests;
+
 import items.GuitarStrings;
 import org.junit.Before;
 import org.junit.Test;

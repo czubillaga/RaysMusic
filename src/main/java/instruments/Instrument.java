@@ -1,14 +1,19 @@
 package instruments;
 
 import behaviors.IPlay;
+import behaviors.ISell;
+import items.Item;
 import types.Type;
 
-public abstract class Instrument implements IPlay {
+import java.math.BigDecimal;
+
+public abstract class Instrument extends Item implements IPlay, ISell {
 
     private Type type;
     private String string;
 
-    public Instrument(Type type, String string) {
+    public Instrument(Type type, String string, BigDecimal buyingPrice, BigDecimal sellingPrice) {
+        super(string, buyingPrice, sellingPrice);
         this.type = type;
         this.string = string;
     }

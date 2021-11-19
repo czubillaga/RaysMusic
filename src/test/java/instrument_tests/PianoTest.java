@@ -1,7 +1,11 @@
+package instrument_tests;
+
 import instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
 import types.Type;
+
+import java.math.BigDecimal;
 
 import static org.junit.Assert.assertEquals;
 
@@ -27,5 +31,10 @@ public class PianoTest {
     @Test
     public void hasKeyCount() {
         assertEquals(88, piano.getKeyCount());
+    }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(new BigDecimal("224.91"), piano.calculateMarkup());
     }
 }
