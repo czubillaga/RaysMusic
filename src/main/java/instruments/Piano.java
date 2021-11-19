@@ -3,15 +3,11 @@ package instruments;
 import behaviors.IPlay;
 import types.Type;
 
-public class Piano extends Instrument implements IPlay {
+public class Piano extends Instrument {
 
-    private String sound;
 
     public Piano() {
-        super(Type.KEYBOARD);
-        this.sound = "piano_sample.mp4";
+        super(Type.KEYBOARD, "piano");
     }
-    public String play() {
-        return this.sound;
-    }
+
 }

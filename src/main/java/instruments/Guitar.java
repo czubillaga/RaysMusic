@@ -3,16 +3,12 @@ package instruments;
 import behaviors.IPlay;
 import types.Type;
 
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument {
 
-    private String sound;
     private Type type;
 
     public Guitar() {
-        super(Type.STRING);
-        this.sound = "guitar_sample.mp4";
+        super(Type.STRING, "guitar");
     }
-    public String play() {
-        return this.sound;
-    }
+
 }

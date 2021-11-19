@@ -3,17 +3,12 @@ package instruments;
 import behaviors.IPlay;
 import types.Type;
 
-public class Trumpet extends Instrument implements IPlay {
+public class Trumpet extends Instrument {
 
-    private String sound;
 
     public Trumpet() {
-        super(Type.BRASS);
-        this.sound = "trumpet_sample.mp4";
+        super(Type.BRASS, "trumpet");
     }
 
-    @Override
-    public String play() {
-        return this.sound;
-    }
+
 }
